@@ -93,6 +93,7 @@
         gnupg
         pass-wayland
         git-credential-manager
+        tig
         curl
         wget
         unzip
