@@ -98,6 +98,7 @@
         ninja
         btop-cuda
         nvtopPackages.full
+        bluetui
         alacritty
         rofi
         mako
