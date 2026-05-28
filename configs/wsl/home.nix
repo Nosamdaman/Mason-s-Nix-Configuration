@@ -28,7 +28,7 @@
                 };
                 credential = {
                     credentialStore = "gpg";
-                    helper = "/mnt/c/Program Files/Git/mingw64/bin/git-credential-manager.exe";
+                    helper = "/mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe";
                 };
                 core = {
                     editor = "kak";
