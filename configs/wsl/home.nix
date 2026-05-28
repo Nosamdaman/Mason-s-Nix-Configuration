@@ -16,10 +16,25 @@
     # Install and configure all programs with pre-defined config options
     programs = {
         home-manager.enable = true;
+        bash = {
+            enable = true;
+            shellAliases = {
+                ls = "ls --color=auto --file-type --group-directories-first";
+                ll = "ls -l --human-readable --time-style=long-iso";
+                la = "ll -a";
+            };
+            initExtra = ''
+            PS1='[\u@\h \W]\$ '
+            '';
+        };
         fish = {
             enable = true;
         };
         kakoune.enable = true;
+        man = {
+            enable = true;
+            man-db.enable = true;
+        };
         git = {
             enable = true;
             lfs.enable = true;
