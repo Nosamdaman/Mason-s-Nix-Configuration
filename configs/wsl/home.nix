@@ -29,6 +29,11 @@
         };
         fish = {
             enable = true;
+            shellAliases = {
+                ls = "ls --color=auto --file-type --group-directories-first";
+                ll = "ls -l --human-readable --time-style=long-iso";
+                la = "ll -a";
+            };
         };
         kakoune.enable = true;
         man = {
@@ -77,6 +82,12 @@
                 program = "pinentry-curses";
             };
         };
+    };
+
+    # Install any extra config files
+    xdg.configFile.fish_frozen_theme = {
+        source = ../../resources/fish_frozen_theme.fish;
+        target = "fish/conf.d/fish_frozen_theme.fish";
     };
 
     home.stateVersion = "26.05";
